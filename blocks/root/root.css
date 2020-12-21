@@ -10,3 +10,7 @@
     background-color: #2A2C2F;
     color: white;
 }
+
+.border {
+    border: 1px solid red;
+}
