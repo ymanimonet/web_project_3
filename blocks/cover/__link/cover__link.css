@@ -1,0 +1,35 @@
+.cover__link {
+    width: 100%;
+    display: block;
+    background: url(../../../images/Historic.png) no-repeat center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #2A2C2F;
+    background-size: 100%;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.cover__link:after {
+    content: "";
+    width: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #2A2C2F;
+    opacity: 0.3;
+    transition-duration: .7s;
+}
+
+.cover__link:hover:after {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 425px) {
+    .cover__link {
+        background-size: auto;
+    }
+}
